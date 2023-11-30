@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" type="text/css" href="{% static '/css/final.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/button.css' %}">
+    <!-- boxicons link -->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!--remixicon link  -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- google font link -->
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    {% include "base.html" %}
+{% load static %}
+    <section class="hero">
+        <div class="hero-text">
+        <!-- <h5>here</h5> -->
+        <h4>ANY HEALTH ISSUE!! &nbsp VISIT REMEDIIUM!!</h4>
+        <h1>REMEDIIUM</h1>
+        <p>
+            If you are searching for a hospital in you city that can cure your disease or you are searching for any home remedies for your medicinal problem, you are on right place. Just click on start, enter your disease and city and you are ready to go. 
+            <br>
+            All of the services are free to use for both personal and commercial. 
+            <br>
+            In exchange of our services we just want your support and best wishes!!
+
+        </p>
+        <a href="Search">Start</a>
+    </div>
+    <div class="hero-img">
+        <img src="{% static 'img/docville-documentary-film-festival.gif' %}">
+    </div>
+
+    </section>
+    <div class="icons">
+        <a href="https://www.instagram.com/btw_itz_harshuuu/"><i class="ri-instagram-fill"></i></a>
+        <a href="https://github.com/Darkshied2"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/harsh-kumar-71a78b228"><i class="ri-linkedin-box-fill"></i></a>
+
+    </div>
+    <!-- scrollreveal effect -->
+    {% include "end.html" %}
